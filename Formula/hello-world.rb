@@ -12,6 +12,11 @@ class HelloWorld < Formula
   end
 
   def install
-    bin.install "hello-world-v#{version}-darwin-#{Hardware::CPU.arch}"
+    if Hardware::CPU.arm?
+      bin.install "hello-world-v#{version}-darwin-arm64"
+    else
+      bin.install "hello-world-v#{version}-darwin-amd64"
+    end
   end
+
 end
