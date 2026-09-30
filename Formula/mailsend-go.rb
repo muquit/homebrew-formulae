@@ -1,14 +1,14 @@
 class MailsendGo < Formula
   desc "A CLI tool to send mail via SMTP protocol"
   homepage "https://github.com/muquit/mailsend-go"
-  version "1.0.12"
+  version "1.0.13"
   
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/muquit/mailsend-go/releases/download/v1.0.12/mailsend-go-v1.0.12-darwin-arm64.d.tar.gz"
-    sha256 "ea129adcf3e513d7ce05e7b604f0dd933029d2e5eb27dcb7c261aefcc99a57cb"
+    url "https://github.com/muquit/mailsend-go/releases/download/v1.0.13/mailsend-go-v1.0.13-darwin-arm64.d.tar.gz"
+    sha256 "af83cb504c5367d368cb7612af30ceab11a5ba33067543c164c004699bdce4d2"
   elsif OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/muquit/mailsend-go/releases/download/v1.0.12/mailsend-go-v1.0.12-darwin-amd64.d.tar.gz"
-    sha256 "e1d33568309f1951e95d430793492c3b1d9565498987ec4dd0a3f79a9b1b2b0b"
+    url "https://github.com/muquit/mailsend-go/releases/download/v1.0.13/mailsend-go-v1.0.13-darwin-amd64.d.tar.gz"
+    sha256 "28b22d05e04e4c81941a3543c59c67daa0dce7b906cd7d523fa514ed57028222"
   end
   
   def install
